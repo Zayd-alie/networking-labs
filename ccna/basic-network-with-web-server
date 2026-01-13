@@ -1,0 +1,42 @@
+# Basic Network with Web Server
+
+## Lab Goal
+The goal of this lab is to demonstrate basic network communication within a single local area network (LAN).
+
+This lab focuses on how end devices communicate through a switch and how clients can access a web server on the same network.
+
+## Topology Overview
+The network consists of:
+- One Layer 2 switch
+- Two client PCs
+- One web server
+- One network printer
+
+All devices are connected to the same switch and are part of the same IP subnet.
+
+## IP Addressing
+All devices are configured in the `192.168.1.0/24` network:
+
+- PC1: `192.168.1.1`
+- PC2: `192.168.1.2`
+- Web Server: `192.168.1.3`
+- Printer: `192.168.1.4`
+
+The server and printer use static IP addresses, which is best practice for devices providing network services.
+
+## How Communication Works
+When PC1 accesses the web server at `http://192.168.1.3`:
+
+1. PC1 confirms the destination IP is in the same subnet.
+2. PC1 uses ARP to resolve the server’s MAC address.
+3. The switch forwards frames based on learned MAC addresses.
+4. The web server receives the HTTP request and responds with the web page.
+
+Because all devices are in the same LAN, no router is required.
+
+## Verification
+Connectivity was verified by successfully accessing the web server from PC1 using a web browser.
+
+## CCNA Relevance
+This lab reinforces key CCNA fundamentals:
+- IP addressing and subnet
