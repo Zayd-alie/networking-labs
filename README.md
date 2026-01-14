@@ -19,16 +19,6 @@ The goal is to build deep, practical understanding of how networks actually work
 ## Structure
 Each lab lives in its **own folder** and is fully self-contained.
 
-networking-labs/
-├── lab-01-basic-webserver/
-│ ├── README.md
-│ └── *.pkt
-├── lab-02-how-switches-work/
-│ ├── README.md
-│ └── *.pkt
-└── README.md
-
-
 Each lab folder contains:
 - A `README.md` explaining the goal, topology, and concepts
 - A Cisco Packet Tracer (`.pkt`) file with the lab topology
