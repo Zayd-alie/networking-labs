@@ -1,7 +1,7 @@
 # Networking Labs
 
-This repository contains hands-on networking labs primarily aligned with the CCNA syllabus.  
-The goal is to build deep, practical understanding of how networks actually work, not just how to pass an exam.
+This repository contains hands-on networking labs aligned with the CCNA syllabus.  
+The goal is to build deep, practical understanding of how networks actually work — not just to copy labs or commands.
 
 ## What this repository is
 - Step-by-step networking labs with clear explanations
@@ -9,19 +9,33 @@ The goal is to build deep, practical understanding of how networks actually work
 - Each lab explains *why* configurations exist, not just the commands
 
 ## Topics covered
-- Switching fundamentals (VLANs, trunking, DTP)
-- Spanning Tree Protocol (STP, RSTP, Cisco variants)
+- Basic LAN design and IP addressing
+- Switching fundamentals (MAC learning, VLANs, trunking)
+- Spanning Tree Protocol (STP, RSTP)
 - EtherChannel
 - Routing fundamentals (static routing, inter-VLAN routing)
 - Basic troubleshooting scenarios
 
 ## Structure
-Labs are organised by topic and certification area:
+Each lab lives in its **own folder** and is fully self-contained.
+
 networking-labs/
-├── ccna/
-│   ├── vlan-basics/
-│   ├── trunking-dtp/
-│   ├── spanning-tree/
-│   ├── etherchannel/
-│   └── routing-basics/
-Each folder contains a README explaining the lab, the topology, and the reasoning behind each step.
+├── lab-01-basic-webserver/
+│ ├── README.md
+│ └── *.pkt
+├── lab-02-how-switches-work/
+│ ├── README.md
+│ └── *.pkt
+└── README.md
+
+
+Each lab folder contains:
+- A `README.md` explaining the goal, topology, and concepts
+- A Cisco Packet Tracer (`.pkt`) file with the lab topology
+
+## How to use this repository
+1. Open a lab folder (e.g. `lab-01-basic-webserver`)
+2. Read the `README.md` to understand the goal and concepts
+3. Open the `.pkt` file in Cisco Packet Tracer
+4. Explore the topology and test connectivity
+
